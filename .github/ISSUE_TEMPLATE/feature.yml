@@ -1,0 +1,21 @@
+name: 建议功能 / Feature request
+description: 希望 Delphinus 增加或改进的功能
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: 建议内容 / Suggestion
+      description: 你想要什么功能，想解决什么问题
+    validations:
+      required: true
+  - type: textarea
+    id: motivation
+    attributes:
+      label: 使用场景 / Use case
+  - type: textarea
+    id: environment
+    attributes:
+      label: 环境 / Environment
+      description: 从 App 内提交时自动填入
+      render: text

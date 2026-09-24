@@ -1,0 +1,26 @@
+name: 报告问题 / Bug report
+description: Delphinus 使用中遇到的问题
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        请不要粘贴文件名、路径或扫描结果。Delphinus 不会自动上传任何数据，下面的内容只有在你点「Submit」后才会公开。
+  - type: textarea
+    id: description
+    attributes:
+      label: 发生了什么 / What happened
+      description: 你做了什么、预期是什么、实际看到了什么
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤 / Steps to reproduce
+      placeholder: "1. …\n2. …"
+  - type: textarea
+    id: environment
+    attributes:
+      label: 环境 / Environment
+      description: 从 App 内提交时自动填入（App 版本、macOS 版本、架构、完全磁盘访问状态）
+      render: text
